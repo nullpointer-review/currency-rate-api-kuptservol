@@ -14,10 +14,10 @@ import java.util.Calendar;
 public interface CentralBankService {
 
     /**
-     *
-     * @param code
-     * @param date
-     * @return
+     * Метод получает данные о значении валюьы на заданную дату
+     * @param code - код валюты
+     * @param date - дата, на которую необходимо поучить значение валюты
+     * @return Значение валюты
      * @throws DateParseException
      * @throws CurrencyRateException
      * @throws CentralBankException

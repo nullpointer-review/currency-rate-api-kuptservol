@@ -21,7 +21,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "DailyInfo", targetNamespace = "http://web.cbr.ru/", wsdlLocation = "file:/C:/Users/\u0421\u0435\u0440\u0433\u0435\u0439/IdeaProjects/CurrencyRate/src/main/resources/DailyInfo.xml")
+@WebServiceClient(name = "DailyInfo", targetNamespace = "http://web.cbr.ru/", wsdlLocation = "wsdl/DailyInfo.xml")
 public class DailyInfo
     extends Service
 {
@@ -34,8 +34,8 @@ public class DailyInfo
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/C:/Users/\u0421\u0435\u0440\u0433\u0435\u0439/IdeaProjects/CurrencyRate/src/main/resources/DailyInfo.xml");
-        } catch (MalformedURLException ex) {
+            url = DailyInfo.class.getClassLoader().getResource("wsdl/FooService.wsdl");
+        } catch (Exception ex) {
             e = new WebServiceException(ex);
         }
         DAILYINFO_WSDL_LOCATION = url;

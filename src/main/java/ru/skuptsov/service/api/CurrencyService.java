@@ -15,9 +15,9 @@ import java.util.Map;
 public interface CurrencyService {
 
     /**
-     *
+     * Метод получает данные о значении валюьы на заданную дату
      * @param pathVariables
-     * @return
+     * @return Объект валюта
      * @throws DateParseException
      * @throws CurrencyRateException
      * @throws CentralBankException
